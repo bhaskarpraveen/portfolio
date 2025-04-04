@@ -11,15 +11,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 order-2 md:order-1">
             <p className="text-gray-600 dark:text-gray-300">
-            I'm, a passionate Software Engineer with a knack for building intuitive web applications and scalable backend systems. <br/> <br/>
+            I&apos;m, a passionate Software Engineer with a knack for building intuitive web applications and scalable backend systems. <br/> <br/>
 
-            With over 3 years of professional experience in full-stack development, I thrive on solving complex engineering challenges and transforming ideas into impactful digital solutions. I specialize in modern technologies like React, Next.js, Node.js, and Python, and I've worked extensively with cloud platforms like AWS to deliver high-performance, reliable software.
+            With over 3 years of professional experience in full-stack development, I thrive on solving complex engineering challenges and transforming ideas into impactful digital solutions. I specialize in modern technologies like React, Next.js, Node.js, and Python, and I&apos;ve worked extensively with cloud platforms like AWS to deliver high-performance, reliable software.
 
     
             </p>
             
             <p className="text-gray-600 dark:text-gray-300">
-            I'm always eager to learn, grow, and contribute to meaningful projects — whether it's optimizing infrastructure, designing slick user interfaces, or experimenting with side projects on the weekend.
+            I&apos;m always eager to learn, grow, and contribute to meaningful projects — whether it&apos;s optimizing infrastructure, designing slick user interfaces, or experimenting with side projects on the weekend.
             </p>
 
             <div className="pt-4">
@@ -36,7 +36,7 @@ export default function About() {
           <div className="relative group order-1 md:order-2">
             <div className="w-full h-[400px] bg-gradient-to-tr from-purple-500 to-blue-500 rounded-lg overflow-hidden">
               {/* You can add your image here */}
-              <img
+              <Image
                 src="/image.jpg" // Add your photo path here
                 alt="Profile"
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
