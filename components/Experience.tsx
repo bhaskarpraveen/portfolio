@@ -6,7 +6,7 @@ const Experience = () => {
     {
       title: "Software Engineer",
       company: "Hoosier Community Network, USA",
-      period: "2022 - Present",
+      period: "Jul 2024 - Present",
       description: `• Supervised and led a development team, overseeing the development and optimization of full-stack applications using React, Express.js, and PostgreSQL, improving response times by 45% through caching and query optimization.
 • Improved UI responsiveness and performance through code-splitting, lazy loading, and memoization.
 • Implemented CI/CD pipelines using Jenkins, reducing deployment time by 60% and increasing release frequency.
