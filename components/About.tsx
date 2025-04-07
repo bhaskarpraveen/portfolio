@@ -13,7 +13,7 @@ export default function About() {
             <p className="text-gray-600 dark:text-gray-300">
             I&apos;m, a passionate Software Engineer with a knack for building intuitive web applications and scalable backend systems. <br/> <br/>
 
-            With over 3 years of professional experience in full-stack development, I thrive on solving complex engineering challenges and transforming ideas into impactful digital solutions. I specialize in modern technologies like React, Next.js, Node.js, and Python, and I&apos;ve worked extensively with cloud platforms like AWS to deliver high-performance, reliable software.
+            With 4+ years of professional experience in full-stack development, I thrive on solving complex engineering challenges and transforming ideas into impactful digital solutions. I specialize in modern technologies like React, Next.js, Node.js, and Python, and I&apos;ve worked extensively with cloud platforms like AWS to deliver high-performance, reliable software.
 
     
             </p>
@@ -26,7 +26,7 @@ export default function About() {
               <h3 className="text-xl font-semibold mb-2">Quick Facts</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
                 <li>🎓 M.S. in Computer Science - IUB</li>
-                <li>💼 3+ years of professional experience</li>
+                <li>💼 4+ years of professional experience</li>
                 <li>🌍 Based in Austin, Texas</li>
                 <li>🚀 Love building side projects</li>
               </ul>
