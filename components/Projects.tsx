@@ -4,32 +4,32 @@ export default function Projects() {
       "title": "Justice League Communication System: A WebSocket Broadcasting Server",
       "description": "Built a secure communication channel for the Justice League using modern web technologies. The system allows real-time broadcasting, dynamic hero identity assignment, secure member-only access, and active roster tracking, all powered by WebSocket communication.",
       "technologies": ["Node.js", "TypeScript", "WebSocket Protocol", "Commander.js"],
-      "github": "https://lnkd.in/gAdsBfpC",
-      "live": "https://justice-league-communication-server.com",
+      "github": "https://github.com/bhaskarpraveen/broadcast-server",
+    //   "live": "https://justice-league-communication-server.com",
       "image": "/justice-league-server.jpg"
     },
     {
       "title": "EfficientAi: AI-Powered Receptionist for Small Service Businesses",
       "description": "EfficientAi is a 24/7 AI receptionist service built to help small service-based businesses eliminate missed calls, improve customer experience, and capture every opportunity for revenue. It handles appointment booking, FAQ responses, lead generation, and spam filtering with customizable responses and AI-driven automation.",
       "technologies": ["Node.js", "TypeScript", "WebSocket Protocol", "React", "FastAPI", "Stripe Integration"],
-      "github": "https://github.com/yourusername/efficientai",
-      "live": "https://efficientai-demo.com",
+    //   "github": "https://github.com/yourusername/efficientai",
+      "live": "https://efficientai.app/",
       "image": "/efficientai.jpg"
     },
     {
       "title": "Banking Loan Risk Prediction ETL",
       "description": "Developed an ETL pipeline for banking loan risk prediction that uses Python for data preprocessing, AWS S3 for storage, AWS SageMaker for model training, and Snowflake for data storage and analysis. The system assesses the risk of loan applicants based on historical data.",
       "technologies": ["Python", "AWS S3", "AWS SageMaker", "Snowflake"],
-      "github": "https://github.com/yourusername/banking-loan-risk-prediction-etl",
-      "live": "https://banking-loan-risk-prediction-demo.com",
+      "github": "https://github.com/bhaskarpraveen/Loan-Risk-Prediction-ETL",
+    //   "live": "https://banking-loan-risk-prediction-demo.com",
       "image": "/banking-loan-risk-prediction.jpg"
     },
     {
-      "title": "GenAI Gmail Search & Analytics",
+      "title": "InboxAI",
       "description": "An end-to-end pipeline that turns your Gmail inbox into a searchable document store. The system uses the Gmail API to fetch raw email payloads, converts them to plain text, packages them into Haystack Document objects, and indexes them in Elasticsearch for fast search and analysis. This provides low-latency, scalable email-QA and analytics backend.",
       "technologies": ["Python", "Gmail API", "Haystack", "Elasticsearch"],
-      "github": "https://github.com/yourusername/genai-gmail-search",
-      "live": "https://genai-gmail-search-demo.com",
+      "github": "https://github.com/bhaskarpraveen/InboxAI",
+    //   "live": "https://genai-gmail-search-demo.com",
       "image": "/genai-gmail-search.jpg"
     }
   ]
@@ -86,22 +86,26 @@ export default function Projects() {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-gray-700 text-white py-3 sm:py-2 px-4 rounded-lg text-center hover:bg-gray-600 transition-colors font-medium"
-                  >
-                    View Code
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 sm:py-2 px-4 rounded-lg text-center hover:from-purple-700 hover:to-blue-700 transition-all duration-300 font-medium"
-                  >
-                    Live Demo
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-gray-700 text-white py-3 sm:py-2 px-4 rounded-lg text-center hover:bg-gray-600 transition-colors font-medium"
+                    >
+                      View Code
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 sm:py-2 px-4 rounded-lg text-center hover:from-purple-700 hover:to-blue-700 transition-all duration-300 font-medium"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -110,7 +114,7 @@ export default function Projects() {
 
         <div className="text-center mt-12">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/bhaskarpraveen"
             target="_blank"
             rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition-colors"
