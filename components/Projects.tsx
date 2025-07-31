@@ -45,9 +45,9 @@ export default function Projects() {
               Featured Projects
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-            Here are some of the projects I've built that showcase my skills and passion for creating innovative solutions.
-          </p>
+                      <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto px-4">
+              Here are some of the projects I&apos;ve built that showcase my skills and passion for creating innovative solutions.
+            </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">

@@ -18,7 +18,7 @@ export default function Character3D() {
   const sceneRef = useRef<THREE.Scene | null>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
-  const controlsRef = useRef<any>(null);
+  const controlsRef = useRef<OrbitControls | null>(null);
   const appliedLegRef = useRef<THREE.Group | null>(null);
   const appliedWeaponRef = useRef<THREE.Group | null>(null);
 
@@ -230,17 +230,7 @@ export default function Character3D() {
       directionalLight.shadow.camera.far = 500;
     }
 
-    function addPlane() {
-      const material = new THREE.MeshStandardMaterial({ color: 0x363636 });
-      const planeGeo = new THREE.PlaneGeometry(20, 20, 32, 32);
-      const plane = new THREE.Mesh(planeGeo, material);
-      
-      scene.add(plane);
-      
-      plane.receiveShadow = true;
-      plane.rotation.x = -Math.PI / 2;
-      plane.position.set(0, -4.74, 0);
-    }
+
 
     function addHead() {
       const headGeo = new THREE.BoxGeometry(1.5, 1.5, 1.2);
@@ -343,26 +333,7 @@ export default function Character3D() {
       mustacheRight.rotation.z = -Math.PI / 8;
     }
 
-    function addHelmet() {
-      const boneMaterial = new THREE.MeshPhongMaterial({ color: 0xf0f0f0 });
-      
-      const helmetGeo = new THREE.BoxGeometry(0.75, 0.75, 0.75);
-      const helmet = new THREE.Mesh(helmetGeo, steelMaterial);
-      
-      const hornGeo = new THREE.BoxGeometry(1.1, 0.25, 0.25);
-      const hornLeftBottom = new THREE.Mesh(hornGeo, boneMaterial);
-      const hornLeftTop = new THREE.Mesh(hornGeo, boneMaterial);
-      
-      scene.add(helmet);
-      scene.add(hornLeftBottom);
-      scene.add(hornLeftTop);
-      
-      helmet.position.set(0, 3, 0);
-      hornLeftBottom.position.set(-0.75, 3.1, 0);
-      hornLeftTop.position.set(-1.3, 3.6, 0);
-      
-      hornLeftTop.rotation.z = Math.PI / 2 + 0.25;
-    }
+
 
     function addBody() {
       const shape1 = new THREE.Shape();
@@ -510,7 +481,7 @@ export default function Character3D() {
     }
 
     function draw() {
-      scene.remove.apply(scene, scene.children);
+      scene.remove(...scene.children);
       addHead();
       addBeard();
       addMustache();
@@ -571,8 +542,9 @@ export default function Character3D() {
     // Cleanup function
     return () => {
       window.removeEventListener('resize', onWindowResize);
-      if (mountRef.current && renderer.domElement) {
-        mountRef.current.removeChild(renderer.domElement);
+      const currentMount = mountRef.current;
+      if (currentMount && renderer.domElement) {
+        currentMount.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };

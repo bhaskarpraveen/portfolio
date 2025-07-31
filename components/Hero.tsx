@@ -19,14 +19,14 @@ export default function Hero() {
               Building elegant solutions to complex problems
             </p>
             <p className="text-lg text-gray-500 dark:text-gray-500 max-w-lg mb-6">
-              Like this character, I adapt and customize solutions to fit your unique needs. Let's craft something extraordinary together.
+              Like this character, I adapt and customize solutions to fit your unique needs. Let&apos;s craft something extraordinary together.
             </p>
             <div className="pt-4">
               <a
                 href="mailto:bhaskarpraveen14@gmail.com"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Let's build something fun
+                Let&apos;s build something fun
               </a>
             </div>
           </div>
