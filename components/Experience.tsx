@@ -52,7 +52,7 @@ const Experience = () => {
             const cleanWord = word.replace(/[.,]/g, '');
             return techStack.includes(cleanWord) ? (
               <React.Fragment key={index}>
-                <span className=" font-bold">{word}</span>{' '}
+                <span className="font-bold text-white">{word}</span>{' '}
               </React.Fragment>
             ) : (
               word + ' '
@@ -64,33 +64,35 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-16">
-      <h2 className="text-3xl font-bold mb-8">Experience</h2>
-      <div className="space-y-12">
-        {experiences.map((exp, index) => (
-          <div key={index} className="border-l-4 border-gray-200 pl-6 hover:border-blue-500 transition-colors">
-            <div className="flex items-center">
-              <FaBuilding className="text-white-500 font-semibold" />
-              <h3 className='text-xl'> &nbsp;{exp.company}</h3>
-            </div>
+    <section id="experience" className="py-20 px-4 bg-gray-900">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-white">Experience</h2>
+              <div className="space-y-12">
+          {experiences.map((exp, index) => (
+            <div key={index} className="border-l-4 border-gray-600 pl-6 hover:border-blue-500 transition-colors">
+              <div className="flex items-center">
+                <FaBuilding className="text-white font-semibold" />
+                <h3 className='text-xl text-white'> &nbsp;{exp.company}</h3>
+              </div>
 
-            <div className="flex items-center gap-2 mt-1 text-gray-600 dark:text-gray-400">
-              <FaBriefcase className="text-gray-500" />
-              <p>{exp.title}</p>
-            </div>
-            
+              <div className="flex items-center gap-2 mt-1 text-gray-300">
+                <FaBriefcase className="text-gray-400" />
+                <p className="text-gray-300">{exp.title}</p>
+              </div>
+              
 
-            
-            <div className="flex items-center gap-2 mt-1 mb-4">
-              <FaCalendarAlt className="text-gray-500" />
-              <p className="text-sm text-gray-500">{exp.period}</p>
+              
+              <div className="flex items-center gap-2 mt-1 mb-4">
+                <FaCalendarAlt className="text-gray-400" />
+                <p className="text-sm text-gray-400">{exp.period}</p>
+              </div>
+              
+              <div className="mt-2 text-gray-300 space-y-2">
+                {highlightTech(exp.description)}
+              </div>
             </div>
-            
-            <div className="mt-2 text-gray-700 dark:text-gray-300 space-y-2">
-              {highlightTech(exp.description)}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

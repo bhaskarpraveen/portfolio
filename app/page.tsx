@@ -8,13 +8,11 @@ import Projects from "@/components/Projects";
 export default function Home() {
   return (
     <main>
-      <div className="max-w-6xl mx-auto px-4">
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-      </div>
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Skills />
     </main>
   );
 }

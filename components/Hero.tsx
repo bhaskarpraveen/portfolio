@@ -2,7 +2,7 @@ import Character3D from "./Character3D";
 
 export default function Hero() {
     return (
-      <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden bg-black">
+      <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-20 sm:pt-0">
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           {/* Text Content */}
@@ -12,13 +12,13 @@ export default function Hero() {
                 Bhaskar Praveen Naidu
               </span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300">
+            <h2 className="text-2xl md:text-3xl text-gray-200">
               Software Engineer
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-lg mb-4">
+            <p className="text-xl text-gray-300 max-w-lg mb-4">
               Building elegant solutions to complex problems
             </p>
-            <p className="text-lg text-gray-500 dark:text-gray-500 max-w-lg mb-6">
+            <p className="text-lg text-gray-400 max-w-lg mb-6">
               Like this character, I adapt and customize solutions to fit your unique needs. Let&apos;s craft something extraordinary together.
             </p>
             <div className="pt-4">

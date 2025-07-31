@@ -14,18 +14,18 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Skills & Technologies</h2>
+    <section className="py-20 px-4 bg-gray-900">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center text-white">Skills & Technologies</h2>
         <div className="space-y-8">
           {Object.entries(skills).map(([category, skillList]) => (
             <div key={category} className="space-y-3">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">{category}</h3>
+              <h3 className="text-xl font-semibold text-white">{category}</h3>
               <div className="flex flex-wrap gap-2">
                 {skillList.map((skill, index) => (
                   <span 
                     key={index}
-                    className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                    className="px-4 py-2 bg-gray-700 text-gray-200 rounded-lg text-sm font-medium hover:bg-gray-600 transition-colors border border-gray-600"
                   >
                     {skill}
                   </span>

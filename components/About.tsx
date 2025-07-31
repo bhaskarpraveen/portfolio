@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-20 px-4 bg-gray-800">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">
+        <h2 className="text-3xl font-bold mb-8 text-center text-white">
           About Me
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 order-2 md:order-1">
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-300">
             I&apos;m, a passionate Software Engineer with a knack for building intuitive web applications and scalable backend systems. <br/> <br/>
 
             With 4+ years of professional experience in full-stack development, I thrive on solving complex engineering challenges and transforming ideas into impactful digital solutions. I specialize in modern technologies like React, Next.js, Node.js, and Python, and I&apos;ve worked extensively with cloud platforms like AWS to deliver high-performance, reliable software.
@@ -18,13 +18,13 @@ export default function About() {
     
             </p>
             
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-300">
             I&apos;m always eager to learn, grow, and contribute to meaningful projects — whether it&apos;s optimizing infrastructure, designing slick user interfaces, or experimenting with side projects on the weekend.
             </p>
 
             <div className="pt-4">
-              <h3 className="text-xl font-semibold mb-2">Quick Facts</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+              <h3 className="text-xl font-semibold mb-2 text-white">Quick Facts</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-300">
                 <li>🎓 M.S. in Computer Science - IUB</li>
                 <li>💼 4+ years of professional experience</li>
                 <li>🌍 Based in Austin, Texas</li>
