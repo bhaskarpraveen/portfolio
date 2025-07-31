@@ -37,6 +37,8 @@ export default function About() {
             <div className="w-full h-[400px] bg-gradient-to-tr from-purple-500 to-blue-500 rounded-lg overflow-hidden">
               {/* You can add your image here */}
               <Image
+                width={400}
+                height={400}
                 src="/image.jpg" // Add your photo path here
                 alt="Profile"
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
